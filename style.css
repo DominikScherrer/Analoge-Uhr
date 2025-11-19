@@ -1,3 +1,6 @@
+/* Author: Dominik; 19.11.2025; This file draws the analog Clock, with the diffrent div.*/
+
+/* The first circle, that makes the frame of the clock */
 .clock {
   width: 500px;
   height: 500px;
@@ -8,6 +11,7 @@
   left: 0;
 }
 
+/* The second circle, that is over the first one. That makes the frame. */
 .outer-clock-face {
   width: 480px;
   height: 480px;
@@ -18,11 +22,13 @@
   left: 10px;
 }
 
+/* This applies to all markings. */
 .marking {
   background-color: black;
   position: fixed;
 }
 
+/* The first marking. */
 .marking-one {
   width: 5px;
   height: 20px;
@@ -31,6 +37,7 @@
   left: 247.5px;
 }
 
+/* The second marking. */
 .marking-two {
   width: 5px;
   height: 20px;
@@ -38,12 +45,14 @@
   top: 470px;
 }
 
+/* The third marking. */
 .marking-three {
   width: 20px;
   height: 5px;
   top: 247.5px;
 }
 
+/* The fourth marking. */
 .marking-four {
   width: 20px;
   height: 5px;
@@ -51,30 +60,48 @@
   top: 247.5px;
 }
 
+/* That applies to all hands. */
 .hand {
   position: fixed;
 }
 
-.hour-hand {
+/* The hand, for the Minutes */
+.min-hand {
   background-color: black;
   width: 5px;
   height: 200px;
   top: 250px;
   left: 247.5px;
+  transform-origin: top center;
 }
 
-.min-hand {
-  background-color: blue;
+/* The hand for the hours. */
+.hour-hand {
+  background-color: black;
   width: 10px;
   height: 150px;
   top: 250px;
   left: 245px;
+  transform-origin: top center;
 }
 
+/* The hand for the seconds. */
 .second-hand {
   background-color: red;
   width: 2px;
   height: 200px;
   top: 250px;
   left: 249px;
+  transform-origin: top center;
+}
+
+/* A small point in the middle of the clock. */
+.inner-clock-face {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: fixed;
+  top: 242.5px;
+  left: 242.5px;
 }
